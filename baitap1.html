@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./baitap1.css"> -->
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container__list {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        .container__main {
+            display: none;
+            /* height: 100px;
+            width: 20px; */
+            
+        }
+
+        .container__main-left {
+            display: inline-block;
+            height: 100px;
+            width: 20px;
+            background-color: aqua;
+        }
+
+        .container__list:hover ~ .container__main-left {
+            display: none;
+        }
+
+
+        .container__main-list {
+            display: inline-block;
+            
+        }
+
+        .container__list:hover ~ .container__main {
+            display: inline-block;
+            width: 400px;
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+        <div class="container__list">
+            <img class="click" width="30px" src="../image/burger_line_list_menu_nav_navigation_option_icon_123231.png"
+                alt="list">
+        </div>
+        <div class="container__main-left">
+
+        </div>
+        <div class="container__main">
+            <ul class="container__main-list">
+                <li class="container__main-list-item">A</li>
+                <li class="container__main-list-item">B</li>
+                <li class="container__main-list-item">C</li>
+            </ul>
+        </div>
+
+
+
+</body>
+
+</html>
